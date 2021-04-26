@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/fuck?characterEncoding=utf8&useSSL=true
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    cache: false
+mybatis-plus:
+  type-aliases-package: net.suncaper.springbootdemo.pojo
+  mapper-locations: classpath:mappers/*.xml
+  configuration:
+    map-underscore-to-camel-case: false
+
